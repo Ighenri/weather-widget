@@ -1,0 +1,35 @@
+.weather-widget {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  border-radius: 35px;
+  padding: 20px;
+  background: linear-gradient(to bottom, #0e1c26, #2a454b, #294861);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.moon {
+  fill: white;
+  filter: drop-shadow(0 0 20px rgba(252, 252, 252, 0.8));
+  width: 80px;
+  height: 80px;
+}
+@keyframes movwCloud {
+  0%,
+  100% {
+    transform: translateX(-65px);
+  }
+  50% {
+    transform: translateX(65px);
+  }
+}
+.moon {
+  fill: lightblue;
+  filter: drop-shadow(0 0 20px rgba(173, 216, 230, 0.8));
+  width: 80px;
+  height: 80px;
+}
