@@ -1,3 +1,10 @@
+.app {
+  display: grid;
+  place-content: center;
+}
+body {
+  background-color: #2a454b;
+}
 .weather-widget {
   position: relative;
   display: flex;
@@ -18,7 +25,7 @@
   width: 80px;
   height: 80px;
 }
-@keyframes movwCloud {
+@keyframes moveCloud {
   0%,
   100% {
     transform: translateX(-65px);
@@ -27,9 +34,40 @@
     transform: translateX(65px);
   }
 }
-.moon {
+.sun {
+  background-color: orange;
+  filter: drop-shadow(0 0 20px rgba(255, 165, 0, 0.8));
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.cloud {
   fill: lightblue;
   filter: drop-shadow(0 0 20px rgba(173, 216, 230, 0.8));
   width: 80px;
   height: 80px;
+  animation: moveCloud 9s ease-in-out infinite;
+}
+
+.cloud-container {
+  position: absolute;
+  top: 58px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.temperature {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.feels-like {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.location {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 5px;
 }
