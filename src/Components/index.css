@@ -71,3 +71,27 @@ body {
   font-weight: bold;
   margin-top: 5px;
 }
+form {
+  margin-top: 2rem;
+}
+.input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.loading {
+  color: white;
+  font-weight: 700;
+  margin-top: 1rem;
+  font-size: 1rem;
+}

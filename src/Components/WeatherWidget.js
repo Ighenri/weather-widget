@@ -22,7 +22,7 @@ const WeatherWidget = ({ location }) => {
     }
   }, [location]);
 
-  if (!weatherData) return <div>Loading ...</div>;
+  if (!weatherData) return <div className="loading">Loading ...</div>;
   const currentTimeUTC = new Date().getTime() / 1000;
   const localTime = currentTimeUTC + weatherData.timezone;
   const isDayTime =
